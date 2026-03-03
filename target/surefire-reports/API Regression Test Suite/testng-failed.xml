@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [API Regression Test Suite]" guice-stage="DEVELOPMENT" verbose="0">
+  <listeners>
+    <listener class-name="com.aventstack.chaintest.plugins.ChainTestListener"/>
+  </listeners>
+  <test thread-count="5" name="Product API Test - Get Product(failed)" verbose="0">
+    <classes>
+      <class name="api.testing.products.tests.GetProductTest">
+        <methods>
+          <include name="getAllProductsTest"/>
+        </methods>
+      </class> <!-- api.testing.products.tests.GetProductTest -->
+    </classes>
+  </test> <!-- Product API Test - Get Product(failed) -->
+  <test thread-count="5" name="Product API Test - Get Product With Json Path(failed)" verbose="0">
+    <classes>
+      <class name="api.testing.products.tests.GetProductsWithJsonPathTest">
+        <methods>
+          <include name="getAllProductsTest"/>
+        </methods>
+      </class> <!-- api.testing.products.tests.GetProductsWithJsonPathTest -->
+    </classes>
+  </test> <!-- Product API Test - Get Product With Json Path(failed) -->
+</suite> <!-- Failed suite [API Regression Test Suite] -->
